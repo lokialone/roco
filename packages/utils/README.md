@@ -1,11 +1,14 @@
-# `utils`
+# 简单的项目模板
+未添加有关vue的eslint配置,兼容react项目
 
-> TODO: description
+## eslint 配置
+- typescript
+- react
+- 使用了prettier
 
-## Usage
+## babel配置
+
+## jest 配置
 
 ```
-const utils = require('utils');
-
-// TODO: DEMONSTRATE API
 ```
