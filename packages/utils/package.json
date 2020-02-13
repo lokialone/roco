@@ -1,6 +1,6 @@
 {
     "name": "roco-utils",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "> TODO: description",
     "author": "loki <648875862@qq.com>",
     "homepage": "https://github.com/lokialone/roco#readme",
@@ -20,8 +20,7 @@
     "scripts": {
         "test": "jest --watch",
         "lint": "eslint src --fix --ext .ts,.tsx --insert-pragma",
-        "build": "babel src -d dist --extensions '.ts'",
-        "prepublishOnly": "npm run build"
+        "build": "./node_modules/.bin/babel src --out-dir lib --extensions '.ts'"
     },
     "bugs": {
         "url": "https://github.com/lokialone/roco/issues"
@@ -55,9 +54,13 @@
         "husky": "^4.2.2",
         "jest": "^25.1.0",
         "lint-staged": "^10.0.7",
+        "prettier": "^1.19.1",
         "ts-jest": "^25.2.0",
         "ts-node": "^8.6.2",
         "typescript": "^3.7.5"
     },
-    "browserslist": "> 0.25%, not dead"
+    "browserslist": "> 0.25%, not dead",
+    "dependencies": {
+        "@babel/polyfill": "^7.8.3"
+    }
 }
